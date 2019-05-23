@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我不是小小鸟</title>
+    <style>
+        html,body{
+            -webkit-user-select:none
+        }
+        h1{
+            text-align: center ;
+            font-size: 60px;
+            text-shadow: 2px 2px 2px #00f
+        }
+        h2{
+            font-size: 40px;
+            text-shadow: 5px 5px 5px #f00;
+            text-align: center
+
+        }
+        ul{
+            list-style: none;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between
+        }
+        ul li img {
+            width: 200px;
+            height: 150px;
+            display: block;
+        }
+        ul li b{
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 22px;
+            color: #18f
+        }
+        ul li span{
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        直飞云霄
+    </h1>
+    <div>
+        <ul>
+        </ul>
+    </div>
+    <h2>
+        点击挑选 战斗鸡，
+        <br>准备作战!!
+    </h2>
+</body>
+<!-- //素材数据 -->
+<script src="./bird-n.js"></script>
+<script>
+    let birdcage = document.querySelector("ul") ;  
+  
+    var  str = "" ;
+    for (let i=0;i<data.length;i++){
+        str += `<li>
+                <img src="${data[i].url}" />
+                <b>${data[i].name}</b>
+                
+                <span>${data[i].des}</span>
+            </li>`
+    }
+    birdcage.innerHTML = str ;
+    birdcage.addEventListener("mouseover",function(eve){ 
+        let e = eve || window.event ;
+        let target = e.target || e.which ; 
+        if(target.nodeName == "IMG"){
+            target.style.width = "300px"
+            target.style.height = "225px"
+        }
+    })   
+    birdcage.addEventListener("mouseout",function(eve){ 
+        let e = eve || window.event ;
+        let target = e.target || e.which ; 
+        if(target.nodeName == "IMG"){
+            target.style.width = "200px"
+            target.style.height = "150px"
+        }
+    })   
+    birdcage.addEventListener("click",function(eve){ 
+        let e = eve || window.event ;
+        let target = e.target || e.which ; 
+        if(target.nodeName == "IMG"){
+           console.log(target.src)
+           sessionStorage.bird-name = target.src
+
+           P        }
+    })   
+
+</script>
+</html>

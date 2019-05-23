@@ -1,0 +1,27 @@
+let data = [
+    {
+        "url":"./images/bird.gif",
+        "des":"凤凰重生是涅槃，野鸡重生是尸变。",
+        "name":"小凤"
+    },
+    {
+        "url":"./images/bird2.gif",
+        "des":"北冥有鱼，其名为鲲，我是鹫",
+        "name":"慢鹫鹫"
+    },
+    {
+        "url":"./images/bird3.gif",
+        "des":"别看我了，你个二呆子。",
+        "name":"呆呆"
+    },
+    {
+        "url":"./images/bird4.gif",
+        "des":"不想啄木的鸟不是好鸟。",
+        "name":"叨一嘴"
+    },
+    {
+        "url":"./images/bird5.gif",
+        "des":"想去哪就去哪，哇哈。",
+        "name":"真·鹰"
+    }
+]

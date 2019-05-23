@@ -1,17 +1,21 @@
 @charset "utf-8";
+
 #bird-box{
     width: 60%;
     height: 450px;
     border: 1px solid #000;
     margin: 0 auto;
     position: relative;
-    background: url(./images/bg.jpg) repeat-x ;
+    /* background: url(./images/bg.jpg) repeat-x ; */
     background-position-x : 0px ;
+    overflow: hidden
 }
 /* 小鸟的样式 */
 #bird{
-    width: 50px;
-    height:50px;
-    background: #000;
+    width: 40px;
+    height:30px;
+    /* box-shadow: 1px 1px 1px #000; */
+    background:url(./images/bird.gif);
+    background-size: 100% 100%;
     position: absolute;
 }

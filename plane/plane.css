@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+h1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #88f;
+    width: 200px;
+}
+.hp{
+    position: absolute;
+    top: 500px;
+    left: 20px;
+    background: #0f0;
+    width: 200px;
+    font-size: 40px;
+}
+.cont{
+    width: 480px;
+    height: 100%;
+    margin: 0 auto;
+    background: url(images/bg.jpg) repeat-y;
+    background-position-y: 0px;
+    position: relative;
+}
+.cont ul{
+    margin:0 auto;
+    padding-top: 30%;
+    text-align: center;
+}
+.cont ul li{
+    font:  50px/60px "";
+    background: #f99;
+    opacity: 0.6;
+    margin: 5px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.logo{
+    width: 100%;
+    height: 104px;
+    background: url(images/logo.png) no-repeat center;
+    position: absolute;
+    margin: 0 auto;
+    top: 20%;
+}
+.load{
+    width: 100%;
+    height: 41px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 70%;
+}
+.myplane{
+    width: 98px;
+    height: 122px;
+    background: url(images/me.png) no-repeat;
+    position: absolute;
+    border: 1px solid #f99;
+    z-index: 100;
+}
+.bullet{
+    width: 7px;
+    height: 18px;
+    background: url(images/bullet.png);
+    position: absolute;
+}
+.danDie1{
+    width: 41px;
+    height: 39px;
+    background: url(images/die1.png);
+    position: absolute;
+    margin-left: -15px;
+}
+.danDie2{
+    width: 41px;
+    height: 39px;
+    background: url(images/die2.png);
+    position: absolute;
+    margin-left: -15px;
+
+}
+.small{
+    width: 59px;
+    height: 36px;
+    position: absolute;
+    background: url(images/plane1.png);
+    border: 1px solid black;
+
+}
+.middle{
+    width: 70px;
+    height: 92px;
+    position: absolute;
+    background: url(images/plane2.png);
+    border: 1px solid black;
+
+}
+.large{
+    width: 165px;
+    height: 256px;
+    position: absolute;
+    background: url(images/plane3.png);
+    border: 1px solid black;
+
+}
