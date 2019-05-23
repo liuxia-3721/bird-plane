@@ -92,10 +92,9 @@
         let e = eve || window.event ;
         let target = e.target || e.which ; 
         if(target.nodeName == "IMG"){
-           console.log(target.src)
-           sessionStorage.bird-name = target.src
-
-           P        }
+            sessionStorage.birdName = target.src
+            window.location.href = "file:///E:/a-web-liu/bird/bird.html"
+        }
     })   
 
 </script>

@@ -1,4 +1,10 @@
 let bird = document.querySelector("#bird") ; //小鸟
+console.log(sessionStorage.birdName)
+// background:url(./images/bird.gif);
+bird.style.background = `url(${sessionStorage.birdName})`
+bird.style .backgroundSize = "100% 100% "
+
+
 let box = document.getElementById("bird-box");//笼子
 let score = document.querySelector("b")
 // 小鸟的部分
@@ -20,7 +26,6 @@ setInterval(
         bird.style.top =  jump + "px"
     },30
 )
-
 
 function ele(){
     let upper = document.createElement("div") ;
